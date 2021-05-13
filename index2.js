@@ -15,5 +15,9 @@ const youCanWalk = () => {
    stopOff.style.display = "none";
 }, 5000)
 }
-// add event listener that will on click on button call youCanWalk function
-button.addEventListener("click", youCanWalk)
+// add event listener that will on click on button call youCanWalk function but it will wait 3 sec
+button.addEventListener("click", () => {
+    setTimeout(youCanWalk, 3000)
+})
+
+
